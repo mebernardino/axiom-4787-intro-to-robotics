@@ -14,6 +14,15 @@ import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
+// Trajectory Classes
+import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.math.kinematics.DifferentialDriveOdometry;
+import edu.wpi.first.math.kinematics.DifferentialDriveWheelSpeeds;
+import edu.wpi.first.util.sendable.SendableRegistry;
+import edu.wpi.first.wpilibj.ADXRS450_Gyro;
+import edu.wpi.first.wpilibj.Encoder;
+import edu.wpi.first.wpilibj.motorcontrol.PWMSparkMax;
+
 public class DriveTrain extends SubsystemBase {
  
   // Declare Motors
@@ -54,7 +63,7 @@ public class DriveTrain extends SubsystemBase {
     RIGHT_MOTOR_1.setInverted(true);
     RIGHT_MOTOR_2.setInverted(true);
     
-    // tbh idk what diffDrive does
+    // Robot's drive
     diffDrive = new DifferentialDrive(LEFT_MOTORS, RIGHT_MOTORS);
   }
 
