@@ -4,9 +4,6 @@
 
 package frc.robot;
 
-import edu.wpi.first.math.kinematics.DifferentialDriveKinematics;
-import pabeles.concurrency.IntOperatorTask.Max;
-
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -23,32 +20,9 @@ public final class Constants {
     public static final int kDriverControllerPort = 0;
   }
 
-  // Motor Constants (EXAMPLE VALUES)
+  // Constants are fake :p
   public static int LEFT_MOTOR_1_ID = 1; // Front left
   public static int LEFT_MOTOR_2_ID = 2; // Back Left
   public static int RIGHT_MOTOR_1_ID = 3; // Front Right
   public static int RIGHT_MOTOR_2_ID = 4; // Back Right
-
-  // Feedforward Gains (EXAMPLE VALUES)
-  public static final double ksVolts = 0.22;
-    public static final double kvVoltSecondsPerMeter = 1.98;
-    public static final double kaVoltSecondsSquaredPerMeter = 0.2;
-
-  // Feedback Gains (EXAMPLE VALUES)
-  public static final double kPDriveVel = 8.5;
-
-  // DifferentialDriveKinematics (EXAMPLE VALUES)
-  public static final double kTrackwidthMeters = 0.32;
-    public static final DifferentialDriveKinematics kDriveKinematics =
-        new DifferentialDriveKinematics(kTrackwidthMeters);
-
-  // Max Trajectory Velocity (EXAMPLE VALUES)
-  public static final double kMaxSpeedMetersPerSecond = 3;
-
-  // Max Trajectory Acceleration (EXAMPLE VALUES)
-  public static final double kMaxAccelerationMetersPerSecondSquared = 1;
-
-  // Ramsete Parameters (EXAMPLE VALUES)
-  public static final double kRamseteB = 2;
-  public static final double kRamseteZeta = 0.7;
 }
